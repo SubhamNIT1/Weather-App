@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <meta http-equiv="x-ua-compatible" content="ie=edge" />
+  <title>Weather</title>
+  <!-- MDB icon -->
+  <link rel="icon" href="img/cloudy.png"  title="weather icons" type="image/x-icon" />
+  
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+  <!-- Google Fonts Roboto -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" />
+  <!-- MDB -->
+  <link rel="stylesheet" href="css/mdb.min.css" />
+</head>
+
+<body style="background-color: black;">
+  <nav class="navbar navbar-dark bg-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand">Weather App</a>
+      <form class="d-flex input-group w-auto">
+        <input type="search" id="search-box" class="form-control rounded" placeholder="City Name" aria-label="Search"
+          aria-describedby="search-addon" />
+        <span class="input-group-text border-0" id="search-addon">
+          <i id="submit" class="fas fa-search"></i>
+        </span>
+      </form>
+    </div>
+  </nav>
+
+  <div class="container my-5">
+    <div class="row d-flex justify-content-center text-white">
+      <div class="col-xs-7">
+        <div id="wrapper-bg" class="card bg-image shadow-1-strong" >
+          <!-- Main current data -->
+          <div class="card-header text-center border-0 mb-2">
+            <p class="h1 mb-1" id="wrapper-name"></p>
+            <p class="mb-1" id="wrapper-description"></p>
+            <p class="display-1 mb-1" id="wrapper-temp"></p>
+            <span>Pressure: <span id="wrapper-pressure"></span></span>
+            <span class="mx-2">|</span>
+            <span>Humidity: <span id="wrapper-humidity"></span></span>
+
+          </div>
+          <!-- Hourly forcast -->
+          <div class="card-body border-top border-bottom text-center">
+
+            .<div class="row">
+
+              <div class="col-2">
+
+                <strong class="d-block mb-2">Now</strong>
+                <img src="" alt="" id="wrapper-icon-hour-now">
+                <strong id="wrapper-hour-now" class="d-block"></strong>
+
+              </div>
+
+
+              <div class="col-2">
+
+                <strong id="wrapper-time1" class="d-block mb-2">1</strong>
+                <img src="" alt="" id="wrapper-icon-hour1">
+                <strong class="d-block" id="wrapper-hour1"></strong>
+
+              </div>
+
+              <div class="col-2">
+
+                <strong id="wrapper-time2" class="d-block mb-2">2</strong>
+                <img src="" alt="" id="wrapper-icon-hour2">
+                <strong class="d-block" id="wrapper-hour2"></strong>
+
+              </div>
+
+              <div class="col-2">
+
+                <strong id="wrapper-time3" class="d-block mb-2">3</strong>
+                <img src="" alt="" id="wrapper-icon-hour3">
+                <strong id="wrapper-hour3" class="d-block"></strong>
+
+              </div>
+
+              <div class="col-2">
+
+                <strong id="wrapper-time4" class="d-block mb-2">4</strong>
+                <img src="" alt="" id="wrapper-icon-hour4">
+                <strong id="wrapper-hour4" class="d-block"></strong>
+
+              </div>
+
+              <div class="col-2">
+
+                <strong id="wrapper-time5" class="d-block mb-2">5</strong>
+                <img src="" alt="" id="wrapper-icon-hour5">
+                <strong id="wrapper-hour5" class="d-block"></strong>
+
+              </div>
+
+
+
+            </div>
+
+
+
+          </div>
+          <!-- Daily forcast -->
+          <div class="card-body px-5 ">
+            <div class="row align-items-center">
+              <div class="col-md-6">
+                <strong>Today</strong>
+              </div>
+              <div class="col-md-2 text-center">
+                <img id="wrapper-icon-today" src="" alt="">
+              </div>
+              <div class="col-md-4 text-end">
+                <span id="wrapper-forcast-temp-today"></span>
+              </div>
+            </div>
+
+            <div class="row align-items-center">
+              <div class="col-md-6">
+                <strong id="wrapper-tomorrow-name">Tomorrow</strong>
+              </div>
+              <div class="col-md-2 text-center">
+                <img id="wrapper-icon-tomorrow" src="" alt="">
+              </div>
+              <div class="col-md-4 text-end">
+                <span id="wrapper-forcast-temp-tomorrow"></span>
+              </div>
+            </div>
+
+            <div class="row align-items-center">
+              <div class="col-md-6">
+                <strong id="wrapper-dAT-name">Day after tomorrow</strong>
+              </div>
+              <div class="col-md-2 text-center">
+                <img id="wrapper-icon-dAT" src="" alt="">
+              </div>
+              <div class="col-md-4 text-end">
+                <span id="wrapper-forcast-temp-dAT"></span>
+              </div>
+            </div>
+
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- MDB -->
+  <script type="text/javascript" src="js/mdb.min.js"></script>
+  <!-- Custom scripts -->
+  <script type="text/javascript" src="script.js"></script>
+</body>
+
+</html>
